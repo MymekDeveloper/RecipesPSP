@@ -1,8 +1,26 @@
+@font-face {
+  font-family: 'VVE-Giallo-Light';
+  src: url(fonts/VVE-Giallo-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'VVE-Giallo-Medium';
+  src: url(fonts/VVE-Giallo-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'VVE-Giallo-Bold';
+  src: url(fonts/VVE-Giallo-Bold.ttf);
+  font-weight: 700;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "VVE-Giallo-Bold", sans-serif;
   
 }
 
@@ -38,12 +56,20 @@ h1 {
 
 h2 {
   font-size: 24px;
+  font-family: "VVE-Giallo-Bold", sans-serif;
   font-weight: 700;
 }
 
 h3 {
   font-size: 16px;
+  font-family: "VVE-Giallo-Medium", sans-serif;
   font-weight: 500;
+}
+
+h4 {
+  font-family: "VVE-Giallo-Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .logo {
