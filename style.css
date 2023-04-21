@@ -20,8 +20,48 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "VVE-Giallo-Bold", sans-serif;
-  
+  font-family: "VVE-Giallo-Bold", sans-serif; 
+}
+
+body {
+  color: #1A3263;
+}
+
+nav {
+  position: relative;
+  z-index: 2;
+  height: 2.5rem;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1.5rem;
+  padding-left: 0;
+  margin-block: 0;
+  overflow-x: auto;
+  list-style: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: .5rem .75rem;
+}
+
+.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.recommendedDishes{
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .menu {
@@ -40,19 +80,6 @@
   background-color: #FAB95B;
 }
 
-body {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
 header {
   display: flex;
   justify-content: flex-end;
@@ -63,24 +90,28 @@ header {
 
 h1 {
   font-size: 180px;
+  color: #1A3263;
 }
 
 h2 {
   font-size: 24px;
   font-family: "VVE-Giallo-Bold", sans-serif;
   font-weight: 700;
+  color: #1A3263;
 }
 
 h3 {
   font-size: 16px;
   font-family: "VVE-Giallo-Medium", sans-serif;
   font-weight: 500;
+  color: #1A3263;
 }
 
 h4 {
   font-family: "VVE-Giallo-Medium", sans-serif;
   font-size: 12px;
   font-weight: 300;
+  color: #1A3263;
 }
 
 .logo {
