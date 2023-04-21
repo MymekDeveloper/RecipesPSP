@@ -15,7 +15,7 @@
   </head>
   <body>
 
-    <div class="main-container container-sm" style="max-width: 430px;">
+    <div class="main-container container-sm" style="min-width: 410px; max-width: 430px;">
       <!-- <div class="empty" style="height: 60px;"></div> -->
       <div class="containerNav p-3 rounded-bottom-5 sticky-top shadow">
         <div class="row row-cols-2 justify-content-center align-content-center">
@@ -42,7 +42,7 @@
       </div>
       <div class="recommendedDishes row d-flex mb-3">
         <div class="col justify-content-start">
-          <img src="images/Main.png" class="img-fluid rounded"  style="width:80px;height:80px;">
+          <img src="images/Main.png" class="img-fluid rounded shadow-5"  style="width:80px;height:80px;">
           <h5 class="d-flex justify-content-center mt-1">Main</h5>
         </div>
         <div class="col">
@@ -70,8 +70,16 @@
             <span class="badge bg-danger"><i class="fa-solid fa-utensils"></i>   Main</span>
             <span class="badge bg-success">Easy</span>
           </div>
-          <h4>Pan-seared Steak with Garlic Butter</h4>
-          <div class="text-muted"><h5>Juicy and tender, this steak is cooked to perfection with rich...</h5></div>
+          <h5>Pan-seared Steak with Garlic Butter</h5>
+          <div class="text-muted">
+            <h6 class="text-muted">Juicy and tender, this steak is cooked to perfection with rich...</h6>
+          </div>
+          <div class="todaysRecommendationTags d-flex justify-content-between">
+            <span class="badge bg-primary"><i class="fa-solid fa-clock"></i>   1h 45</span>
+            <div class="col d-flex justify-content-end">
+              <h6 class="text-muted">Read more...</h6>
+            </div>
+          </div>
         </div>
       </div>
     </div>
