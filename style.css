@@ -157,14 +157,11 @@ h6 {
 input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #1A3263 !important;
   opacity: 0.6 !important;
+  font-weight: 300 !important;
 }
 
 .advanced {
-  padding-left: 20px !important;
-}
-
-.button-container {
-  margin-bottom: 190px;
+  padding-left: 14px !important;
 }
 
 .input::placeholder {
