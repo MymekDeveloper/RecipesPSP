@@ -32,6 +32,7 @@ html, body {
   flex-wrap: wrap;
   margin: 0 auto;
   height: 100%;
+  max-width: 400px;
 }
 
 .main-container {
@@ -39,7 +40,6 @@ html, body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   outline-color: #7C320C;
-  max-width: 400px;
 }
 
 nav {
