@@ -20,24 +20,26 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "VVE-Giallo-Bold", sans-serif; 
+  font-family: "VVE-Giallo-Bold", sans-serif;
+  outline: none;
 }
 
-body {
+html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  height: 100%;
 }
 
 .main-container {
-  background: rgb(255,255,255);
   background: linear-gradient(164.13deg, #FFFFFF 70.35%, #FAB95B 88.09%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   outline-color: #7C320C;
+  max-width: 400px;
 }
 
 nav {
@@ -102,9 +104,69 @@ h5 {
 
 h6 {
   font-family: "VVE-Giallo-Medium", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
   color: #1A3263 !important;
+}
+
+.img-cover {
+  object-fit: fill;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px #FABC62;
+} 
+
+.span {
+  padding: 10px 14px;
+}
+
+.button-next {
+  width: 50%;
+  padding: 16px 0px;
+  background-color: #1A3263;
+  color: white;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 0px;
+}
+
+.button-previous {
+  width: 49%;
+  padding: 16px 0px;
+  background-color: #fff;
+  color: #1A3263;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 0px;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 8px 0px 0px 8px;
+}
+
+form.example button {
+  width: 20%;
+  padding: 10px;
+  background: #3B71CA;
+  border-radius: 0px 8px 8px 0px;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 0px 2px 8px #3B71CA;
+  border: 1px solid #5f87c8;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form.example:active, :focus {
+  border: 0px;
 }
 
 .text-description {
@@ -125,7 +187,7 @@ h6 {
   padding: 10px 10px;
   color: #fff;
   bottom: 0px;
-  left: 14px;
+  left: 0px;
   font-size: 24px;
 }
 
@@ -137,6 +199,13 @@ h6 {
 
 .btn-main {
   background-color: #FAB95B !important;
+  color: #1A3263 !important;
+  padding: 12px !important;
+  width: 100%;
+}
+
+.btn-main-bottom {
+  background-color: #ffffff !important;
   color: #1A3263 !important;
   padding: 12px !important;
   width: 100%;
