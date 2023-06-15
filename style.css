@@ -32,14 +32,18 @@ html, body {
   flex-wrap: wrap;
   margin: 0 auto;
   height: 100%;
-  max-width: 400px;
+  max-width: 410px;
+  max-height: 800px;
 }
 
 .main-container {
-  background: linear-gradient(164.13deg, #FFFFFF 70.35%, #FAB95B 88.09%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: linear-gradient(164.13deg, #FFFFFF 60.35%, #FAB95B 88.09%);
   outline-color: #7C320C;
+  height: 100%
+}
+
+#no-gradient {
+  background: none;
 }
 
 nav {
@@ -204,8 +208,15 @@ form.example:active, :focus {
   width: 100%;
 }
 
-.btn-main-bottom {
+.btn-main-white {
   background-color: #ffffff !important;
+  color: #1A3263 !important;
+  padding: 12px !important;
+  width: 100%;
+}
+
+.btn-secondary-white {
+  border: 2px solid #1A3263 !important;
   color: #1A3263 !important;
   padding: 12px !important;
   width: 100%;
