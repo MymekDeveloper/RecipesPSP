@@ -89,6 +89,7 @@ h2 {
   font-family: "VVE-Giallo-Bold", sans-serif;
   font-weight: 700;
   color: #1a3263 !important;
+  margin-bottom: 0px !important;
 }
 
 h3 {
@@ -100,23 +101,26 @@ h3 {
 
 h4 {
   font-family: "VVE-Giallo-Medium", sans-serif;
-  font-size: 12px;
+  font-size: 1.25rem;
   font-weight: 300;
   color: #1a3263 !important;
+  margin-bottom: 0px !important;
 }
 
 h5 {
   font-family: "VVE-Giallo-Medium", sans-serif;
-  font-size: 12px;
+  font-size: 1rem !important;
   font-weight: 300;
   color: #1a3263 !important;
+  margin-bottom: 0px !important;
 }
 
 h6 {
   font-family: "VVE-Giallo-Medium", sans-serif;
-  font-size: 16px;
+  font-size: 12px !important;
   font-weight: 300;
   color: #1a3263 !important;
+  margin-bottom: 0px !important;
 }
 
 .img-cover {
@@ -226,6 +230,26 @@ form.example:active,
 
 .recipe--tag-difficulty {
   background-color: #5bb700;
+}
+
+.recipe--tag-time {
+  background-color: #fef0cc;
+}
+
+.daypart--frame {
+  background-color: antiquewhite;
+  border-radius: 12px;
+}
+
+.daypart--image {
+  border-radius: 12px 12px 0px 0px;
+}
+
+.daypart--bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px;
 }
 
 .bottom-right {
