@@ -236,6 +236,10 @@ form.example:active,
   background-color: #fef0cc;
 }
 
+.daypart {
+  display: flex;
+}
+
 .daypart--frame {
   background-color: antiquewhite;
   border-radius: 12px;
