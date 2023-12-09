@@ -209,21 +209,6 @@ form.example:active,
   opacity: 0.6;
 }
 
-.todays-recommendation {
-  position: relative;
-}
-
-.todaysRecommendationImage {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.todays-recommendation-tags {
-  position: absolute;
-  bottom: 0px;
-}
-
 .recipe--tag-type {
   background-color: #f16821;
 }
@@ -256,7 +241,24 @@ form.example:active,
   padding: 8px 8px;
 }
 
-.bottom-right {
+.dish--lower-tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.dish--description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dish--price {
+  position: relative;
+}
+
+.dish--price-container {
   position: absolute;
   background-color: #1a3263;
   opacity: 0.9;
