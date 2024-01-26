@@ -1,5 +1,6 @@
 :root {
-  --Beige: #1FEF0CC;
+  --Beige: #fef0cc;
+  --Secondary: #1a3263;
 }
 
 @font-face {
@@ -45,6 +46,7 @@ body {
   background: linear-gradient(164.13deg, #ffffff 60.35%, #fab95b 88.09%);
   outline-color: #7c320c;
   height: 100%;
+  min-width: 360px;
 }
 
 #no-gradient {
@@ -74,18 +76,16 @@ a:link {
   padding: 8px 16px 4px 16px;
 }
 
-.maintxt {
-  background-image: url(images/);
-  background-size: cover;
-}
-
 h1 {
-  font-size: 180px;
+  font-size: 32px !important;
+  font-family: "VVE-Giallo-Bold", sans-serif;
+  font-weight: 700;
   color: #1a3263 !important;
+  margin-bottom: 0px !important;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 24px !important;
   font-family: "VVE-Giallo-Bold", sans-serif;
   font-weight: 700;
   color: #1a3263 !important;
@@ -131,6 +131,14 @@ h6 {
 
 .span {
   padding: 10px 14px;
+}
+
+.export-frame {
+  padding: 10px;
+  padding-left: 12px;
+  background-color: #1a3263;
+  border-radius: 8px;
+  color: #fff;
 }
 
 .recommended-dishes {
@@ -205,20 +213,37 @@ form.example:active,
   border: 0px;
 }
 
+form.example-search input[type="text"] {
+  margin-top: 16px;
+  padding: 10px;
+  font-size: 14px;
+  float: left;
+  width: 100%;
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
 .text-description {
   opacity: 0.6;
 }
 
-.recipe--tag-type {
+.dish--tag-type {
   background-color: #f16821;
 }
 
-.recipe--tag-difficulty {
+.dish--tag-difficulty {
   background-color: #5bb700;
 }
 
-.recipe--tag-time {
+.dish--tag-time {
   background-color: #fef0cc;
+}
+
+.list-items--radio-buttons {
+  margin-top: 8px;
+  font-size: 1rem;
+  align-items: normal;
+  align-content: normal;
 }
 
 .daypart {
@@ -290,9 +315,23 @@ form.example:active,
   width: 100%;
 }
 
+.btn-main-primary {
+  background-color: #1a3263 !important;
+  color: white !important;
+  padding: 12px !important;
+  width: 100%;
+}
+
 .btn-secondary-white {
   border: 2px solid #1a3263 !important;
   color: #1a3263 !important;
+  padding: 12px !important;
+  width: 100%;
+}
+
+.btn-secondary-red {
+  border: 2px solid #ff0b0b !important;
+  color: #ff0b0b !important;
   padding: 12px !important;
   width: 100%;
 }
@@ -309,20 +348,11 @@ form.example:active,
   padding: 16px 68px !important;
 }
 
-input::placeholder {
+input::placeholder textarea::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #1a3263 !important;
   opacity: 0.6 !important;
   font-weight: 300 !important;
-}
-
-.advanced {
-  padding-left: 14px !important;
-}
-
-.input::placeholder {
-  color: #631a1a;
-  opacity: 0.1;
 }
 
 .facebook {
@@ -333,6 +363,10 @@ input::placeholder {
 
 input[type="text"] {
   border: 2px solid #fab95b;
+}
+
+textarea {
+  border: 2px solid #fab95b !important;
 }
 
 .img-shadow {

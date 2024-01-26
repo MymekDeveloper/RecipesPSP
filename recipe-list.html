@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <title>Navbar</title>
+  </head>
+
+  <body>
+    <div class="main-container container mt-5" id="no-gradient">
+      <div class="d-flex justify-content-between mt-1 mb-3">
+        <div class="">
+          <a href="index.html"
+            ><i
+              class="fa-solid fa-angle-left"
+              style="font-size: 2rem; color: #1a3263"
+            ></i
+          ></a>
+        </div>
+        <div class="">
+          <a href="index.html"
+            ><img src="images/Recipespsp.svg" style="width: 151x; height: 32px"
+          /></a>
+        </div>
+        <div class="">
+          <a href="account-start.html"
+            ><i
+              class="fa-solid fa-user"
+              style="font-size: 1.5rem; color: #1a3263"
+            ></i
+          ></a>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModalToggle"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                Advanced search
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h4 class="text-center">Ingredient search behaviour</h4>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault1"
+                  id="flexRadioDefault1"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Show dishes from selected products
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault2"
+                  id="flexRadioDefault2"
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Show possible dishes from selected products, that miss some
+                  ingredients
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault3"
+                  id="flexRadioDefault3"
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Show all dishes, sorted by money spend
+                </label>
+              </div>
+              <div class="form-floating mb-2 mt-3">
+                <input
+                  type="input"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder=""
+                />
+                <label for="floatingInput">Minimal price</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="input"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder=""
+                />
+                <label for="floatingInput">Maximum price</label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                class="btn btn-primary"
+                data-bs-target="#exampleModalToggle2"
+                data-bs-toggle="modal"
+              >
+                Choose products
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="recipe-view.html">
+        <div class="dish--price row mb-4">
+          <div class="dish--image col-6">
+            <div class="dish--price-container" style="margin-left: 11px">
+              $6.99
+            </div>
+            <img
+              src="images/TodaysRec.png"
+              class="img-fluid rounded"
+              style="width: 180px; height: 180px"
+            />
+          </div>
+          <div class="dish--description col-6">
+            <div class="dish--higher-part">
+              <div class="d-flex justify-content-between">
+                <span class="badge dish--tag-type"
+                  ><i class="fa-solid fa-utensils"></i> Main</span
+                >
+                <span class="badge dish--tag-difficulty">Medium</span>
+              </div>
+              <div class="dish--title">
+                <h4 class="mt-2 two-line-description mb-2">Pan-seared</h4>
+                <div class="two-line-description">
+                  <h5 class="text-muted">Juicy and tender</h5>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 dish--lower-tags">
+              <span class="badge bg-primary"
+                ><i class="fa-solid fa-clock"></i> 1h 45</span
+              >
+              <span><h5 class="text-description">View</h5></span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="recipe-view.html">
+        <div class="dish--price row mb-4">
+          <div class="dish--image col-6">
+            <div class="dish--price-container" style="margin-left: 11px">
+              $6.99
+            </div>
+            <img
+              src="images/TodaysRec.png"
+              class="img-fluid rounded"
+              style="width: 180px; height: 180px"
+            />
+          </div>
+          <div class="dish--description col-6">
+            <div class="dish--higher-part">
+              <div class="d-flex justify-content-between">
+                <span class="badge dish--tag-type"
+                  ><i class="fa-solid fa-utensils"></i> Main</span
+                >
+                <span class="badge dish--tag-difficulty">Medium</span>
+              </div>
+              <div class="dish--title">
+                <h4 class="mt-2 two-line-description mb-2">Pan-seared</h4>
+                <div class="two-line-description">
+                  <h5 class="text-muted">Juicy and tender</h5>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 dish--lower-tags">
+              <span class="badge bg-primary"
+                ><i class="fa-solid fa-clock"></i> 1h 45</span
+              >
+              <span><h5 class="text-description">View</h5></span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="recipe-view.html">
+        <div class="dish--price row mb-4">
+          <div class="dish--image col-6">
+            <div class="dish--price-container" style="margin-left: 11px">
+              $6.99
+            </div>
+            <img
+              src="images/TodaysRec.png"
+              class="img-fluid rounded"
+              style="width: 180px; height: 180px"
+            />
+          </div>
+          <div class="dish--description col-6">
+            <div class="dish--higher-part">
+              <div class="d-flex justify-content-between">
+                <span class="badge dish--tag-type"
+                  ><i class="fa-solid fa-utensils"></i> Main</span
+                >
+                <span class="badge dish--tag-difficulty">Medium</span>
+              </div>
+              <div class="dish--title">
+                <h4 class="mt-2 two-line-description mb-2">Pan-seared</h4>
+                <div class="two-line-description">
+                  <h5 class="text-muted">Juicy and tender</h5>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 dish--lower-tags">
+              <span class="badge bg-primary"
+                ><i class="fa-solid fa-clock"></i> 1h 45</span
+              >
+              <span><h5 class="text-description">View</h5></span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

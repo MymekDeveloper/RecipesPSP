@@ -25,7 +25,7 @@
     ></script>
     <link rel="icon" type="image/x-icon" href="/images/FaviconFrame.png" />
     <link rel="manifest" href="manifest.json" />
-    <title>Navbar</title>
+    <title>RecipesPSP</title>
   </head>
 
   <body>
@@ -59,8 +59,22 @@
               <i class="fa fa-search priamry" style="color: white"></i>
             </button>
           </form>
-          <div class="col advanced d-flex text-description mt-3">
-            <h6><a href="#">Advanced Search</a></h6>
+          <div class="col d-flex text-description justify-content-between mt-3">
+            <div class="d-flex align-items-center">
+              <i
+                class="fa-solid fa-sort"
+                style="margin-left: 0.4rem; margin-right: 1rem"
+              ></i>
+              <h6>
+                <a
+                  href="#"
+                  data-bs-target="#exampleModalToggle"
+                  data-bs-toggle="modal"
+                  >Advanced search</a
+                >
+              </h6>
+            </div>
+            <div><i class="fa-solid fa-earth-americas"></i></div>
           </div>
         </div>
       </div>
@@ -110,6 +124,178 @@
         <h2>Todays Recommendation</h2>
       </div>
 
+      <div
+        class="modal fade"
+        id="exampleModalToggle"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                Advanced search
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h4 class="text-center">Ingredient search behaviour</h4>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault1"
+                  id="flexRadioDefault1"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Show dishes from selected products
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault2"
+                  id="flexRadioDefault2"
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Show possible dishes from selected products, that miss some
+                  ingredients
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault3"
+                  id="flexRadioDefault3"
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Show all dishes, sorted by money spend
+                </label>
+              </div>
+              <div class="form-floating mb-2 mt-3">
+                <input
+                  type="input"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder=""
+                />
+                <label for="floatingInput">Minimal price</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="input"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder=""
+                />
+                <label for="floatingInput">Maximum price</label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                class="btn btn-primary"
+                data-bs-target="#exampleModalToggle2"
+                data-bs-toggle="modal"
+              >
+                Choose products
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModalToggle2"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+                Advanced search
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h4 class="text-center">Choose products</h4>
+              <form class="example example-search" style="margin: auto">
+                <input type="text" placeholder="Search..." name="search2" />
+              </form>
+              <ul class="list-items--radio-buttons list-group">
+                <li class="list-group-item">
+                  <input
+                    class="form-check-input me-1"
+                    type="checkbox"
+                    value=""
+                    id="firstCheckbox"
+                  />
+                  <label class="form-check-label" for="firstCheckbox"
+                    >First ingredient</label
+                  >
+                </li>
+                <li class="list-group-item">
+                  <input
+                    class="form-check-input me-1"
+                    type="checkbox"
+                    value=""
+                    id="secondCheckbox"
+                  />
+                  <label class="form-check-label" for="secondCheckbox"
+                    >Second ingredient</label
+                  >
+                </li>
+                <li class="list-group-item">
+                  <input
+                    class="form-check-input me-1"
+                    type="checkbox"
+                    value=""
+                    id="thirdCheckbox"
+                  />
+                  <label class="form-check-label" for="thirdCheckbox"
+                    >Third ingredient</label
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                data-bs-target="#exampleModalToggle"
+                data-bs-toggle="modal"
+              >
+                Back
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <a href="recipe-view.html">
         <div class="dish--price row mb-4">
           <div class="dish--image col-6">
@@ -125,10 +311,10 @@
           <div class="dish--description col-6">
             <div class="dish--higher-part">
               <div class="d-flex justify-content-between">
-                <span class="badge recipe--tag-type"
+                <span class="badge dish--tag-type"
                   ><i class="fa-solid fa-utensils"></i> Main</span
                 >
-                <span class="badge recipe--tag-difficulty">Medium</span>
+                <span class="badge dish--tag-difficulty">Medium</span>
               </div>
               <div class="dish--title">
                 <h4 class="mt-2 two-line-description mb-2">Pan-seared</h4>
